@@ -4,13 +4,24 @@ import sliderDalaiLama from "@/assets/slider-dalailama.webp";
 import sliderMenlha from "@/assets/slider-menlha.webp";
 import sliderProduction from "@/assets/slider-production.webp";
 import sliderQc from "@/assets/slider-qc.webp";
+import slider from "@/assets/slider5.jpeg";
+import slider6 from "@/assets/slider6.jpeg";
+import slider7 from "@/assets/slider7.png";
+import slider8 from "@/assets/slider8.png";
+import slider9 from "@/assets/slider9.png";
+
 
 const slides = [
   { img: heroBg, alt: "Sang-Druk Tibetan Herbal Clinic" },
-  { img: sliderDalaiLama, alt: "His Holiness the 14th Dalai Lama" },
-  { img: sliderMenlha, alt: "The Great Medicinal Buddha" },
-  { img: sliderProduction, alt: "Authentic Tibetan Herbal Medicine Production" },
-  { img: sliderQc, alt: "Modern Quality Control & Research" },
+  // { img: sliderDalaiLama, alt: "His Holiness the 14th Dalai Lama" },
+  // { img: sliderMenlha, alt: "The Great Medicinal Buddha" },
+  // { img: sliderProduction, alt: "Authentic Tibetan Herbal Medicine Production" },
+  // { img: sliderQc, alt: "Modern Quality Control & Research" },
+  { img: slider, alt: "Sang-Druk Clinic & Wellness Center" },
+  { img: slider6, alt: "Sang-Druk Wellness Program" },
+  { img: slider7, alt: "Sang-Druk Community Outreach" },
+  { img: slider8, alt: "Sang-Druk Healing Arts" },
+  { img: slider9, alt: "Sang-Druk Traditional Medicine" },
 ];
 
 const HeroSection = () => {
@@ -19,10 +30,10 @@ const HeroSection = () => {
   const next = useCallback(() => setCurrent((p) => (p + 1) % slides.length), []);
   const prev = useCallback(() => setCurrent((p) => (p - 1 + slides.length) % slides.length), []);
 
-  useEffect(() => {
-    const id = setInterval(next, 6000);
-    return () => clearInterval(id);
-  }, [next]);
+  // useEffect(() => {
+  //   const id = setInterval(next, 6000);
+  //   return () => clearInterval(id);
+  // }, [next]);
 
   return (
     <section className="relative w-full pt-[60px] sm:pt-[100px] lg:pt-[150px]">

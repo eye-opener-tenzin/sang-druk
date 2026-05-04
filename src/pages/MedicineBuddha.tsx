@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import buddhaImg from "@/assets/buddha-medicine.webp";
+import buddhaImg from "@/assets/maxresdefault.png";
 import sliderMenlha from "@/assets/slider-menlha.webp";
 
 const MedicineBuddha = () => {
@@ -40,7 +40,7 @@ const MedicineBuddha = () => {
               Following verses is reprint from Chagmed Rinpoche's Hymn in Praise of the Medicinal Buddha.
             </p>
           </div>
-          <img src={buddhaImg} alt="Medicine Buddha" className="w-full h-72 sm:h-80 md:h-96 object-contain rounded-lg" loading="lazy" />
+          <img src={buddhaImg} alt="Medicine Buddha" className="w-full h-64 sm:h-80 md:h-96 object-contain rounded-lg" loading="lazy" />
         </div>
       </section>
 

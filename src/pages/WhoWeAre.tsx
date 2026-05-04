@@ -3,10 +3,17 @@ import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import logo from "@/assets/logo.webp";
+import logo from "@/assets/logosd-removebg-preview.png";
 import aboutImg from "@/assets/about-img.webp";
 import directorImg from "@/assets/director.webp";
 import sliderMenlha from "@/assets/slider-menlha.webp";
+import clove from "@/assets/clove.jpeg";
+import imag3 from "@/assets/imag3.jpeg";
+import im2 from "@/assets/im2.jpeg";
+import imag4 from "@/assets/imag4.jpeg";
+import saffron from "@/assets/saffron.jpeg";
+import nutmeg from "@/assets/nutmeg.png";
+import green from "@/assets/green.jpeg";
 
 const WhoWeAre = () => {
   return (
@@ -102,17 +109,33 @@ const WhoWeAre = () => {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { num: "1", name: "Bamboo Silica", desc: "Supports the Lungs and helps regulate Tripa (Bile), promoting respiratory health, reducing excess heat, and strengthening internal vitality." },
-            { num: "2", name: "Saffron / Safflower", desc: "Connected to the Liver, these herbs balance Tripa (Bile), supporting blood purification, liver function, and emotional stability." },
-            { num: "3", name: "Clove", desc: "Linked to the Life-Channel, Clove helps balance Lung (Wind), improving circulation, warmth, nerve strength, and mental clarity." },
-            { num: "4", name: "Green Cardamom", desc: "Supports the Kidneys and helps regulate Beken (Phlegm), improving digestion, kidney function, and reducing excess coldness and heaviness." },
-            { num: "5", name: "Nutmeg", desc: "Associated with the Heart, Nutmeg balances Lung (Wind), strengthening heart energy, improving sleep, calming the mind, and supporting emotional well-being." },
-            { num: "6", name: "Black Cardamom", desc: "Connected to the Spleen, it helps regulate Beken (Phlegm), supporting digestive fire, metabolism, and internal strength." },
+            { num: "1", name: "Bamboo Silica", img: imag3, desc: "Supports the Lungs and helps regulate Tripa (Bile), promoting respiratory health, reducing excess heat, and strengthening internal vitality" },
+  { num: "2", name: "Saffron / Safflower", img: saffron, desc: "Connected to the Liver, these herbs balance Tripa (Bile), supporting blood purification, liver function, and emotional stability" },
+  { num: "3", name: "Clove", img: clove, desc: "Linked to the Life-Channel, Clove helps balance Lung (Wind), improving circulation, warmth, nerve strength, and mental clarity" },
+  { num: "4", name: "Green Cardamom", img: green, desc: "Supports the Kidneys and helps regulate Beken (Phlegm), improving digestion, kidney function, and reducing excess coldness and heaviness" },
+  { num: "5", name: "Nutmeg", img: nutmeg, desc: "Associated with the Heart, Nutmeg balances Lung (Wind), strengthening heart energy, improving sleep, calming the mind, and supporting emotional well-being" },
+  { num: "6", name: "Black Cardamom", img: im2, desc: "Connected to the Spleen, it helps regulate Beken (Phlegm), supporting digestive fire, metabolism, and internal strength" },
           ].map((item) => (
             <div key={item.num} className="border border-border rounded-lg p-6">
-              <div className="w-10 h-10 rounded-full bg-spa-green flex items-center justify-center mb-4">
+              {/* <div className="w-10 h-10 rounded-full bg-spa-green flex items-center justify-center mb-4">
                 <span className="text-primary-foreground font-bold font-sans text-sm">{item.num}</span>
-              </div>
+              </div> */}
+              <div className="flex items-center justify-between mb-4">
+  {/* Number Circle */}
+  <div className="w-10 h-10 rounded-full bg-spa-green flex items-center justify-center">
+    <span className="text-primary-foreground font-bold font-sans text-sm">
+      {item.num}
+    </span>
+  </div>
+
+  {/* Image Icon */}
+  <img
+    src={item.img}
+    alt={item.name}
+    className="w-[80px] h-[60px] object-fit rounded-full "
+  />
+</div>
+
               <h4 className="font-serif text-lg mb-2">{item.name}</h4>
               <p className="text-muted-foreground text-sm font-sans leading-relaxed">{item.desc}</p>
             </div>
@@ -147,7 +170,7 @@ const WhoWeAre = () => {
                 The integration of Tibetan and English text represents the union of ancient wisdom and modern healthcare—preserving tradition while making healing accessible to all.
               </p>
             </div>
-            <img src={logo} alt="Sang-Druk Logo" className="w-52 h-52 object-contain mx-auto" />
+            <img src={logo} alt="Sang-Druk Logo" className="w-[400px] h-[400px] mt-3 object-contain mx-auto" />
           </div>
         </div>
       </section>
