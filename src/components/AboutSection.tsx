@@ -1,6 +1,6 @@
 import { ArrowRight, Award } from "lucide-react";
 import aboutImg from "@/assets/about-img.webp";
-import qcImg from "@/assets/slider-qc.webp";
+import qcImg from "@/assets/consult.png";
 import directorImg from "@/assets/director.webp";
 import Reveal from "@/components/Reveal";
 

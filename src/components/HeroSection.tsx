@@ -9,6 +9,8 @@ import slider6 from "@/assets/slider6.jpeg";
 import slider7 from "@/assets/slider7.png";
 import slider8 from "@/assets/slider8.png";
 import slider9 from "@/assets/slider9.png";
+import slider10 from "@/assets/slider10.png";
+
 
 
 const slides = [
@@ -22,6 +24,7 @@ const slides = [
   { img: slider7, alt: "Sang-Druk Community Outreach" },
   { img: slider8, alt: "Sang-Druk Healing Arts" },
   { img: slider9, alt: "Sang-Druk Traditional Medicine" },
+  { img: slider10, alt: "Sang-Druk Research & Development" }
 ];
 
 const HeroSection = () => {
@@ -41,7 +44,7 @@ const HeroSection = () => {
       {/* ✅ CHANGED: removed max-width container */}
       <div className="w-full px-0">
 
-        <div className="relative w-full aspect-[21/9] overflow-hidden shadow-elegant bg-spa-green-deep">
+        <div className="relative w-full h-[490px] overflow-hidden shadow-elegant bg-spa-green-deep">
 
           {slides.map((slide, i) => (
             <div
@@ -53,7 +56,7 @@ const HeroSection = () => {
               <img
                 src={slide.img}
                 alt={slide.alt}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-fit object-center"
                 width={1920}
                 height={1080}
                 loading={i === 0 ? "eager" : "lazy"}

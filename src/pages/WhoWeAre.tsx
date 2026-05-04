@@ -6,7 +6,7 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import logo from "@/assets/logosd-removebg-preview.png";
 import aboutImg from "@/assets/about-img.webp";
 import directorImg from "@/assets/director.webp";
-import sliderMenlha from "@/assets/slider-menlha.webp";
+import sliderMenlha from "@/assets/whoooo.png";//
 import clove from "@/assets/clove.jpeg";
 import imag3 from "@/assets/imag3.jpeg";
 import im2 from "@/assets/im2.jpeg";

@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import buddhaImg from "@/assets/maxresdefault.png";
-import sliderMenlha from "@/assets/slider-menlha.webp";
+import sliderMenlha from "@/assets/medibhudhalasrt.png";
 
 const MedicineBuddha = () => {
   return (
