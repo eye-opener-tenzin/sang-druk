@@ -22,13 +22,22 @@ const CtaSection = () => {
             Experience authentic Tibetan traditional healing at Indore's first Sowa-Rigpa clinic. Fill the form and we'll connect with you on WhatsApp — or call us directly.
           </p>
           <a
+            href="tel:+919836212792"
+            className="inline-flex items-center gap-3 glass-dark text-primary-foreground font-sans text-sm px-6 py-3.5 rounded-full hover:bg-primary-foreground/15 transition-all"
+          >
+            <span className="w-9 h-9 rounded-full bg-spa-gold/20 flex items-center justify-center animate-pulse-ring">
+              <Phone className="w-4 h-4 text-spa-gold" />
+            </span>
+            Call us:  9836212792
+          </a>
+          <a
             href="tel:+917018922152"
             className="inline-flex items-center gap-3 glass-dark text-primary-foreground font-sans text-sm px-6 py-3.5 rounded-full hover:bg-primary-foreground/15 transition-all"
           >
             <span className="w-9 h-9 rounded-full bg-spa-gold/20 flex items-center justify-center animate-pulse-ring">
               <Phone className="w-4 h-4 text-spa-gold" />
             </span>
-            Call us: 070189 22152
+            Call us: 70189 22152
           </a>
         </Reveal>
 

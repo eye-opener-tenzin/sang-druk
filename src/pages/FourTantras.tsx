@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import sliderMenlha from "@/assets/slider-menlha.webp";
+import sliderMenlha from "@/assets/tantras.png";
 import aboutImg from "@/assets/about-img.webp";
 
 const tantras = [
@@ -69,7 +69,7 @@ const FourTantras = () => {
               This text shows great precision and consistency while arranging the topics sequentially. The description of medical theories and practices are based entirely on the law of nature and are made very clear.
             </p>
           </div>
-          <img src={sliderMenlha} alt="Gyueshi - Four Medical Tantras" className="w-full h-56 sm:h-72 md:h-80 object-cover rounded-lg" loading="lazy" />
+          <img src={sliderMenlha} alt="Gyueshi - Four Medical Tantras" className="w-full h-56 sm:h-72 md:h-80  rounded-lg" loading="lazy" />
         </div>
       </section>
 

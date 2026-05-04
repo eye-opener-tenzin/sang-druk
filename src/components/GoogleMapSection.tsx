@@ -19,11 +19,12 @@ const GoogleMapSection = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 shrink-0 text-spa-green" />
-                <a href="tel:+917018922152" className="hover:text-foreground transition-colors">070189 22152</a>
+                <a href="tel:+919836212792" className="hover:text-foreground transition-colors">+91 9836212792</a>
+                <a href="tel:+917018922152" className="hover:text-foreground transition-colors">+91 70189 22152</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 shrink-0 text-spa-green" />
-                <a href="mailto:info@sangdruk.com" className="hover:text-foreground transition-colors">info@sangdruk.com</a>
+                <a href="mailto:sangdrukclinic@gmail.com" className="hover:text-foreground transition-colors">sangdrukclinic@gmail.com</a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-4 h-4 shrink-0 text-spa-green" />

@@ -3,9 +3,9 @@ import { ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
-import sliderMenlha from "@/assets/slider-menlha.webp";
-import sliderDalailama from "@/assets/slider-dalailama.webp";
-import sliderProduction from "@/assets/slider-production.webp";
+import sliderMenlha from "@/assets/mentseekhang.png";
+import sliderDalailama from "@/assets/prevention-of-india.png";
+import sliderProduction from "@/assets/medicineglobally.png";
 import sangDrukClinic from "@/assets/sang-druk-clinic-new.webp";
 
 const DevelopmentInExile = () => {
@@ -48,7 +48,7 @@ const DevelopmentInExile = () => {
               To safeguard these ancient traditions, monasteries, schools, and important cultural institutions were reestablished in India, including centers dedicated to Tibetan Medicine and Astrology.
             </p>
           </div>
-          <img src={sliderDalailama} alt="His Holiness the Dalai Lama" className="w-full h-56 sm:h-72 md:h-80 object-cover rounded-lg" loading="lazy" />
+          <img src={sliderDalailama} alt="His Holiness the Dalai Lama" className="w-full h-85 sm:h-80 md:h-90  rounded-lg" loading="lazy" />
         </div>
       </section>
 
@@ -56,7 +56,7 @@ const DevelopmentInExile = () => {
       <section className="bg-section-bg py-10 sm:py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
           <div className="grid md:grid-cols-2 gap-8 sm:gap-10 items-center">
-            <img src={sliderMenlha} alt="Men-Tsee-Khang" className="w-full h-56 sm:h-72 object-cover rounded-lg" loading="lazy" />
+            <img src={sliderMenlha} alt="Men-Tsee-Khang" className="w-full h-56 sm:h-72 rounded-lg" loading="lazy" />
             <div>
               <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-3 font-sans">Establishment of Medical School</p>
               <h2 className="text-3xl md:text-4xl leading-tight mb-5">Men-Tsee-Khang</h2>
@@ -96,7 +96,7 @@ const DevelopmentInExile = () => {
               Today, Tibetan Medicine continues to grow globally, serving people from all walks of life by offering a safe, natural, and holistic approach to healthcare. Its focus on prevention, personalized treatment, and long-term wellness makes it increasingly valued around the world.
             </p>
           </div>
-          <img src={sliderProduction} alt="Tibetan medicine production" className="w-full h-56 sm:h-72 object-cover rounded-lg" loading="lazy" />
+          <img src={sliderProduction} alt="Tibetan medicine production" className="w-full h-100 sm:h-70  rounded-lg" loading="lazy" />
         </div>
       </section>
 
