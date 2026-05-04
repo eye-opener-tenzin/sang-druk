@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, ChevronDown, Instagram, Facebook, Youtube } from "lucide-react";
+import { Menu, X, ChevronDown, Instagram, Facebook, Youtube, Chrome } from "lucide-react";
 import logo from "@/assets/logo-removebg-preview.png";
 import buddha from "@/assets/buddha-medicine.png";
 
@@ -223,9 +223,9 @@ const Navbar = () => {
           </a>
 
           {/* YouTube */}
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-            <Youtube className="w-5 h-5 text-spa-green-deep hover:text-spa-green transition gap-4 " />
-          </a>
+          <a href="https://share.google/gxVep7mAtH8xPmyTf" target="_blank" rel="noopener noreferrer">
+  <Chrome className="w-5 h-5 text-spa-green-deep hover:text-spa-green transition gap-4 " />
+</a>
 
           {/* ORIGINAL BOOK NOW (unchanged) */}
           <a
