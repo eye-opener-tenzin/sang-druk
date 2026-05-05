@@ -12,8 +12,14 @@ import slider9 from "@/assets/slider9.png";
 import slider10 from "@/assets/slider10.png";
 import slider11 from "@/assets/slider11.png";
 
+
+
 const slides = [
   { img: heroBg, alt: "Sang-Druk Tibetan Herbal Clinic" },
+  // { img: sliderDalaiLama, alt: "His Holiness the 14th Dalai Lama" },
+  // { img: sliderMenlha, alt: "The Great Medicinal Buddha" },
+  // { img: sliderProduction, alt: "Authentic Tibetan Herbal Medicine Production" },
+  // { img: sliderQc, alt: "Modern Quality Control & Research" },
   { img: slider, alt: "Sang-Druk Clinic & Wellness Center" },
   { img: slider6, alt: "Sang-Druk Wellness Program" },
   { img: slider7, alt: "Sang-Druk Community Outreach" },
@@ -26,13 +32,8 @@ const slides = [
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
 
-  const next = useCallback(() => {
-    setCurrent((p) => (p + 1) % slides.length);
-  }, []);
-
-  const prev = useCallback(() => {
-    setCurrent((p) => (p - 1 + slides.length) % slides.length);
-  }, []);
+  const next = useCallback(() => setCurrent((p) => (p + 1) % slides.length), []);
+  const prev = useCallback(() => setCurrent((p) => (p - 1 + slides.length) % slides.length), []);
 
   useEffect(() => {
     const id = setInterval(next, 6000);
@@ -41,9 +42,11 @@ const HeroSection = () => {
 
   return (
     <section className="relative w-full pt-[60px] sm:pt-[100px] lg:pt-[150px]">
+
+      {/* ✅ CHANGED: removed max-width container */}
       <div className="w-full px-0">
-        {/* ✅ Responsive height */}
-        <div className="relative w-full h-[280px] sm:h-[380px] md:h-[450px] lg:h-[550px] overflow-hidden shadow-elegant bg-spa-green-deep">
+
+        <div className="relative w-full h-[490px] overflow-hidden shadow-elegant bg-spa-green-deep">
 
           {slides.map((slide, i) => (
             <div
@@ -52,33 +55,21 @@ const HeroSection = () => {
                 i === current ? "opacity-100" : "opacity-0"
               }`}
             >
-              {/* ✅ Fixed image scaling */}
               <img
                 src={slide.img}
                 alt={slide.alt}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-fit object-center"
                 width={1920}
                 height={1080}
-                sizes="(max-width: 640px) 100vw, 100vw"
                 loading={i === 0 ? "eager" : "lazy"}
               />
-
-              {/* ✅ Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-
-              {/* ✅ Mobile-optimized content */}
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <h2 className="text-sm sm:text-lg md:text-xl font-semibold leading-tight">
-                  {slide.alt}
-                </h2>
-              </div>
             </div>
           ))}
 
           {/* ✅ LEFT ARROW */}
           <button
             onClick={prev}
-            className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-black/40 hover:bg-black/60 text-white p-2 sm:p-3 rounded-full backdrop-blur-sm transition"
+            className="absolute left-3 top-1/2 -translate-y-1/2 z-10 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-sm transition"
           >
             ❮
           </button>
@@ -86,7 +77,7 @@ const HeroSection = () => {
           {/* ✅ RIGHT ARROW */}
           <button
             onClick={next}
-            className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-black/40 hover:bg-black/60 text-white p-2 sm:p-3 rounded-full backdrop-blur-sm transition"
+            className="absolute right-3 top-1/2 -translate-y-1/2 z-10 bg-black/40 hover:bg-black/60 text-white p-3 rounded-full backdrop-blur-sm transition"
           >
             ❯
           </button>

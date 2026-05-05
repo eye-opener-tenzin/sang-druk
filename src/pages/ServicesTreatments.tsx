@@ -493,11 +493,11 @@ const ServicesTreatments = () => {
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              onClick={() => setSelectedService(null)}
-              className="absolute top-3 right-3 text-[30px] text-white hover:text-white/70 "
-            >
-              ✕
-            </button>
+  onClick={() => setSelectedService(null)}
+  className="absolute top-3 right-3 h-9 w-9 text-lg flex items-center justify-center border border-gray-300 rounded-full bg-blue-950 text-white hover:text-white/70"
+>
+  ✕
+</button>
 
             {/* IMAGE */}
             <img
