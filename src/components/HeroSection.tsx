@@ -11,6 +11,9 @@ import slider8 from "@/assets/slider8.png";
 import slider9 from "@/assets/slider9.png";
 import slider10 from "@/assets/slider10.png";
 import slider11 from "@/assets/slider11.png";
+import slider13 from "@/assets/slider13.png";
+import slider14 from "@/assets/slider14.png";
+import slider15 from "@/assets/slider15.png";
 
 
 
@@ -21,12 +24,15 @@ const slides = [
   // { img: sliderProduction, alt: "Authentic Tibetan Herbal Medicine Production" },
   // { img: sliderQc, alt: "Modern Quality Control & Research" },
   { img: slider, alt: "Sang-Druk Clinic & Wellness Center" },
-  { img: slider6, alt: "Sang-Druk Wellness Program" },
+  { img: slider13, alt: "Sang-Druk Sustainable Practices" },
+  // { img: slider6, alt: "Sang-Druk Wellness Program" },
   { img: slider7, alt: "Sang-Druk Community Outreach" },
-  { img: slider8, alt: "Sang-Druk Healing Arts" },
+  { img: slider14, alt: "Sang-Druk Innovation Hub" },
+  // { img: slider8, alt: "Sang-Druk Healing Arts" },
   { img: slider9, alt: "Sang-Druk Traditional Medicine" },
-  { img: slider10, alt: "Sang-Druk Research & Development" },
-  { img: slider11, alt: "Sang-Druk Future Innovations" }
+  { img: slider15, alt: "Sang-Druk Global Impact" },
+  // { img: slider10, alt: "Sang-Druk Research & Development" },
+  { img: slider11, alt: "Sang-Druk Future Innovations" },
 ];
 
 const HeroSection = () => {

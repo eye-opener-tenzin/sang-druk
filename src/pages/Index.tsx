@@ -27,10 +27,10 @@ const Index = () => {
       <WhatIsSangDrukSection />
       <ServicesSection />
       <ProductsSection />
-      <WhyChooseSection />
+      {/* <WhyChooseSection /> */}
       <TestimonialSection />
-      <HowItWorksSection />
-      <BlogSection />
+      {/* <HowItWorksSection /> */}
+      {/* <BlogSection /> */}
       <FaqSection />
       <GoogleMapSection />
       <CtaSection />
