@@ -279,8 +279,8 @@ Our health drinks are carefully crafted from authentic traditional Tibetan herba
             </button>
 
             {activeIndex === i && (
-              <div className="p-6 flex flex-row gap-6">
-                <img src={item.img} className="mx-auto mb-4 h-[350px] max-w-[300px]" />
+              <div className="p-6 flex flex-col gap-6 items-center bg-gray-100">
+                <img src={item.img} className="mx-auto mb-4 w-full h-[350px] object-contain" />
                 <p className="text-sm whitespace-pre-line">{item.content}</p>
               </div>
             )}

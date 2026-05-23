@@ -77,7 +77,7 @@ const Navbar = () => {
           {/* Center — Title */}
           <div className="flex-1 flex flex-col items-center text-center px-2 min-w-0">
             {/* Tibetan Text */}
-            <span className="text-yellow-300 font-serif text-xs sm:text-base md:text-xl lg:text-2xl leading-tight" lang="bo">
+            <span className="text-yellow-300 font-serif text-base sm:text-lg md:text-2xl lg:text-3xl leading-tight" lang="bo">
               ༄༅། །བཟང་དྲུག་བོད་ལུགས་གསོ་རིག་སྨན་ཁང་།
             </span>
 

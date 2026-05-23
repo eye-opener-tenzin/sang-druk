@@ -1,4 +1,5 @@
 import { ArrowRight, Award } from "lucide-react";
+import { Link } from "react-router-dom";
 import aboutImg from "@/assets/about-img.webp";
 import qcImg from "@/assets/consult.png";
 import directorImg from "@/assets/director.webp";
@@ -19,13 +20,13 @@ const AboutSection = () => {
           <p className="text-muted-foreground text-[15px] font-sans leading-[1.8] mb-8">
             With the experience of a former doctor of Men-Tsee-Khang (The Tibetan Medical and Astro Institute), our clinic follows the authentic lineage of Tibetan medicine, combining ancient knowledge with compassionate, patient-centered care. We focus on identifying and treating the root cause of illness rather than only managing symptoms, helping patients achieve long-term health, balance, and well-being.
           </p>
-          <a
-            href="/about-sangdruk"
+          <Link
+            to="/about/who-we-are"
             className="group inline-flex items-center gap-2 bg-gradient-green text-primary-foreground font-sans text-sm px-7 py-3.5 rounded-full shadow-elevated hover:shadow-elegant transition-all duration-300 hover:-translate-y-0.5"
           >
             Explore more
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
         </Reveal>
 
         <Reveal variant="scale" delay={120}>

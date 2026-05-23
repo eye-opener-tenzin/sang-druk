@@ -43,7 +43,7 @@ const WhatIsSangDrukSection = () => {
             <p className="text-muted-foreground text-[15px] font-sans leading-[1.8] mb-6">
               Chebula, known as the king of Tibetan medicine, represents perfect balance. It contains the essence of the five natural elements and supports all three energies, symbolizing complete healing and longevity.
             </p>
-            <Link to="/about-sangdruk" className="group inline-flex items-center gap-2 bg-gradient-green text-primary-foreground font-sans text-sm px-7 py-3.5 rounded-full shadow-elevated hover:shadow-elegant transition-all duration-300 hover:-translate-y-0.5">
+            <Link to="/about/why-choose-us" className="group inline-flex items-center gap-2 bg-gradient-green text-primary-foreground font-sans text-sm px-7 py-3.5 rounded-full shadow-elevated hover:shadow-elegant transition-all duration-300 hover:-translate-y-0.5">
               Get More Information
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </Link>
