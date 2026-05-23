@@ -16,7 +16,7 @@ import SSHC6 from "@/assets/SSHC6.png";
 import SSHC7 from "@/assets/SSHC7.png";
 import SSHC8 from "@/assets/SSHC8.png";
 import SSHC9 from "@/assets/SSHC9.png";
-    import SSHC10 from "@/assets/SSHC10.png";
+import SSHC10 from "@/assets/SSHC10.png";
 import SSHC11 from "@/assets/SSHC11.png";
 import SSHC12 from "@/assets/SSHC12.png";
 import SSHC13 from "@/assets/SSHC13.png";
